@@ -1,0 +1,59 @@
+---
+title: "A Short Introduction to Logic"
+---
+
+Logical inferences consist of a premise and a conclusion:
+
+*Rome is in Italy, so if you are in Rome you are in Italy*
+
+Logic isn't about whether the premise is true (you could equally well have said "London is in Italy") but about whether the conclusion follows from the premise. If it does then the inference is said to be **valid**.
+
+If the premise can't be true without the conclusion being true, the inference is **deductively valid**:
+
+*All dogs are reptiles, Pluto is a dog, so Pluto is a reptile.*
+
+If the conclusion seems only likely to be true based on the premise then the inference is **inductively valid** to stronger or weaker degree:
+
+*Pluto has never tried to bit anyone, so he won't try to bite me.*
+
+If the conclusion doesn't follow at all from the premise the inference is **invalid**:
+
+*Pluto is a dog so his lead is bright red*
+
+## Truth functions
+
+Inferences can be combined.
+
+*Pluto is a dog and the sky is blue* is true only if both premises are true. This is called a conjunction, a logical AND:
+
+|a|b|a & b|
+|-|-|----|
+|F|F|F|
+|F|T|F|
+|T|F|T|
+|T|T|T|
+
+*Pluto is a dog or the sky is blue* is true if either premise is true. This is called a disjunction, a logical OR:
+
+|a|b|a &or; b|
+|-|-|----|
+|F|F|F|
+|F|T|F|
+|T|F|T|
+|T|T|T|
+
+The negation of an inference is written as &not;
+
+|a|&not;a|
+|-|--|
+|F|T|
+|T|F|
+
+Using this machinery several inferences can be chained together:
+
+
+
+
+
+http://en.wikipedia.org/wiki/List_of_logic_symbols
+

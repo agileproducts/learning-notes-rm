@@ -1,0 +1,62 @@
+---
+title: "Statistical Mechanics - Introduction"
+---
+
+The thermodynamic properties of matter can be described at the macroscopic level using variables like number of moles, temperature and pressure. But how can those properties be explained microscopically, as a function of the behaviour of atoms? Given the vast number of atoms in any appreciable quantity of matter this cannot be done by trying to specify the state of every individual atom. Instead we must use a **statistical** description of the atoms to explain the thermodynamic properties of the bulk matter. This is the aim of statistical mechanics.
+
+
+### Macrostates, microstates and statistical weight
+
+A **macrostate** is the thermodynamic state of a piece of matter described in terms of thermodynamic variables. For example a gas or liquid can be described in terms of temperature T, volume V and number of moles N (N,V,T).
+
+A **microstate** is a complete specification of the state of the system on the atomic scale. Quantum mechanically this is the eigenstate of the complete system, under certain circumstances (such as an ideal gas at high temperatures) this may be approximated classically in terms of the position and momentum of every atom.
+
+The number of microstates compatible with a particular macrostate (i.e. the number of ways the atoms can be arranged to produce the same overall thermodynamic state) is called the **statistical weight** of the macrostate, given the symbol $\Omega$.
+
+
+### Entropy and Boltzmann's law
+
+The entropy $S$ of a given thermodynamic macrostate is related it its statistical weight via Boltzmann's law:
+
+$$S = k\:ln\:\Omega$$
+
+where $k$ is Boltzmann's constant, with a value of approximately 1.38 x 10<sup>-23</sup> JK<sup>-1</sup>. 
+
+
+### Example - a spin system
+
+Picture a system of electrons each of which has spin up or spin down - with only two possible states per particle this is a simple system to think about. With an intrinsic angular momentum of $\pm1/2\hbar$ each electron has a z-component of magnetic moment equal to $\pm\mu_B$, the Bohr magneton. The z-component of magnetic moment for the entire system is the sum of the individual moments. This can be summarised as:
+
+$$M_z = \mu_B\sum_{i=i}^Ns_i$$
+
+where $M_z$ is the overall z magentic moment, N is the number of particles and $s_i$ is +1 if electron $i$ is spin up and -1 if it is spin down. 
+
+As each electron can be in one of two states there are $2^N$ possible microstates of this system.
+
+For a given macrostate the total magnetic moment is 
+
+$$M_z = \mu_B(n_\uparrow - n_\downarrow)$$
+
+where n is the number of particles of each spin.
+
+How many different ways can this macrostate be achieved - i.e. what is the statistical weight $\Omega$ of the macrostate? This is the number of **combinations** of spin up and down that come to the same overall total, which is:
+
+$$\Omega = \frac{N!}{n_\uparrow!n_\downarrow!}$$
+
+which means that the overall entropy $S = k\:ln\:\Omega$ of the microstate equals
+
+$$\Omega = k\:ln\:\frac{N!}{n_\uparrow!n_\downarrow!}$$
+
+Clearly there is only one macrostate in which all spins can be pointing up. Here $N! = n_\uparrow!$ and $n_\downarrow! = 0$. For these purposes $0!$ is taken to equal 1, so $\Omega = 1$. Hence
+
+$$S = k\:ln\:1 = 0$$
+
+Similarly if all spins are aligned down $N! = n_\downarrow!$ and $n_\uparrow! = 0$ , $\Omega$ equals 1 and $S$ is again zero.
+
+What if half the spins are up and half are down, resulting in zero magnetic moment overall? Here $n_\uparrow! = n_\downarrow! = 1/2N!$
+
+
+
+
+
+
